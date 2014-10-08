@@ -94,8 +94,8 @@ end
 
 minetest.register_abm({
 	nodenames = {"default:water_flowing"},
-	interval = 1,
-	chance = 1,
+	interval = 3,
+	chance = 2,
 	action = function(pos, node)
 		if not flow_nodes then
 			get_flow_nodes()
