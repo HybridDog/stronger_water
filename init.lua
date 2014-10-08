@@ -1,3 +1,4 @@
+local load_time_start = os.clock()
 
 local function table_icontains(t, v)
 	for i = 1,#t do
@@ -104,3 +105,4 @@ minetest.register_abm({
 	end
 })
 
+print(string.format("[stronger_water] loaded after ca. %.2fs", os.clock() - load_time_start))
