@@ -105,4 +105,4 @@ minetest.register_abm({
 	end
 })
 
-print(string.format("[stronger_water] loaded after ca. %.2fs", os.clock() - load_time_start))
+minetest.log("info", string.format("[stronger_water] loaded after ca. %.2fs", os.clock() - load_time_start))
